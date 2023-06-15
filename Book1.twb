@@ -1,0 +1,925 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20231.23.0310.1044                               -->
+<workbook original-version='18.1' source-build='2023.1.0 (20231.23.0310.1044)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='hotel_reviews2' inline='true' name='federated.0izgjn2105tlvd144huea1wvw8aq' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='hotel_reviews2' name='textscan.0o91zqd0cv05h71e0821601aod6k'>
+            <connection class='textscan' directory='C:/Users/User/Desktop/hotel_reviews' filename='hotel_review2.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0o91zqd0cv05h71e0821601aod6k' name='hotel_review2.csv' table='[hotel_review2#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_KE' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='id' ordinal='1' />
+            <column datatype='datetime' name='dateAdded' ordinal='2' />
+            <column datatype='datetime' name='dateUpdated' ordinal='3' />
+            <column datatype='string' name='address' ordinal='4' />
+            <column datatype='string' name='categories' ordinal='5' />
+            <column datatype='string' name='primaryCategories' ordinal='6' />
+            <column datatype='string' name='city' ordinal='7' />
+            <column datatype='string' name='country' ordinal='8' />
+            <column datatype='string' name='keys' ordinal='9' />
+            <column datatype='real' name='latitude' ordinal='10' />
+            <column datatype='real' name='longitude' ordinal='11' />
+            <column datatype='string' name='name' ordinal='12' />
+            <column datatype='string' name='postalCode' ordinal='13' />
+            <column datatype='string' name='province' ordinal='14' />
+            <column datatype='datetime' name='reviews.date' ordinal='15' />
+            <column datatype='string' name='reviews.dateSeen' ordinal='16' />
+            <column datatype='real' name='reviews.rating' ordinal='17' />
+            <column datatype='string' name='reviews.sourceURLs' ordinal='18' />
+            <column datatype='string' name='reviews.text' ordinal='19' />
+            <column datatype='string' name='reviews.title' ordinal='20' />
+            <column datatype='string' name='reviews.userCity' ordinal='21' />
+            <column datatype='string' name='reviews.userProvince' ordinal='22' />
+            <column datatype='string' name='reviews.username' ordinal='23' />
+            <column datatype='string' name='sourceURLs' ordinal='24' />
+            <column datatype='string' name='websites' ordinal='25' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0o91zqd0cv05h71e0821601aod6k' name='hotel_review2.csv' table='[hotel_review2#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_KE' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='id' ordinal='1' />
+            <column datatype='datetime' name='dateAdded' ordinal='2' />
+            <column datatype='datetime' name='dateUpdated' ordinal='3' />
+            <column datatype='string' name='address' ordinal='4' />
+            <column datatype='string' name='categories' ordinal='5' />
+            <column datatype='string' name='primaryCategories' ordinal='6' />
+            <column datatype='string' name='city' ordinal='7' />
+            <column datatype='string' name='country' ordinal='8' />
+            <column datatype='string' name='keys' ordinal='9' />
+            <column datatype='real' name='latitude' ordinal='10' />
+            <column datatype='real' name='longitude' ordinal='11' />
+            <column datatype='string' name='name' ordinal='12' />
+            <column datatype='string' name='postalCode' ordinal='13' />
+            <column datatype='string' name='province' ordinal='14' />
+            <column datatype='datetime' name='reviews.date' ordinal='15' />
+            <column datatype='string' name='reviews.dateSeen' ordinal='16' />
+            <column datatype='real' name='reviews.rating' ordinal='17' />
+            <column datatype='string' name='reviews.sourceURLs' ordinal='18' />
+            <column datatype='string' name='reviews.text' ordinal='19' />
+            <column datatype='string' name='reviews.title' ordinal='20' />
+            <column datatype='string' name='reviews.userCity' ordinal='21' />
+            <column datatype='string' name='reviews.userProvince' ordinal='22' />
+            <column datatype='string' name='reviews.username' ordinal='23' />
+            <column datatype='string' name='sourceURLs' ordinal='24' />
+            <column datatype='string' name='websites' ordinal='25' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[hotel_review2.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;Ksh&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_KE&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[hotel_review2.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hotel_review2.csv_5C43ED44BFBF42438A4855342C05277A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[id]</local-name>
+            <parent-name>[hotel_review2.csv]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hotel_review2.csv_5C43ED44BFBF42438A4855342C05277A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dateAdded</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[dateAdded]</local-name>
+            <parent-name>[hotel_review2.csv]</parent-name>
+            <remote-alias>dateAdded</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hotel_review2.csv_5C43ED44BFBF42438A4855342C05277A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dateUpdated</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[dateUpdated]</local-name>
+            <parent-name>[hotel_review2.csv]</parent-name>
+            <remote-alias>dateUpdated</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hotel_review2.csv_5C43ED44BFBF42438A4855342C05277A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>address</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[address]</local-name>
+            <parent-name>[hotel_review2.csv]</parent-name>
+            <remote-alias>address</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hotel_review2.csv_5C43ED44BFBF42438A4855342C05277A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>categories</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[categories]</local-name>
+            <parent-name>[hotel_review2.csv]</parent-name>
+            <remote-alias>categories</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hotel_review2.csv_5C43ED44BFBF42438A4855342C05277A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>primaryCategories</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[primaryCategories]</local-name>
+            <parent-name>[hotel_review2.csv]</parent-name>
+            <remote-alias>primaryCategories</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hotel_review2.csv_5C43ED44BFBF42438A4855342C05277A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>city</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[city]</local-name>
+            <parent-name>[hotel_review2.csv]</parent-name>
+            <remote-alias>city</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hotel_review2.csv_5C43ED44BFBF42438A4855342C05277A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[country]</local-name>
+            <parent-name>[hotel_review2.csv]</parent-name>
+            <remote-alias>country</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hotel_review2.csv_5C43ED44BFBF42438A4855342C05277A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>keys</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[keys]</local-name>
+            <parent-name>[hotel_review2.csv]</parent-name>
+            <remote-alias>keys</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hotel_review2.csv_5C43ED44BFBF42438A4855342C05277A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[latitude]</local-name>
+            <parent-name>[hotel_review2.csv]</parent-name>
+            <remote-alias>latitude</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hotel_review2.csv_5C43ED44BFBF42438A4855342C05277A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[longitude]</local-name>
+            <parent-name>[hotel_review2.csv]</parent-name>
+            <remote-alias>longitude</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hotel_review2.csv_5C43ED44BFBF42438A4855342C05277A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[name]</local-name>
+            <parent-name>[hotel_review2.csv]</parent-name>
+            <remote-alias>name</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hotel_review2.csv_5C43ED44BFBF42438A4855342C05277A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>postalCode</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[postalCode]</local-name>
+            <parent-name>[hotel_review2.csv]</parent-name>
+            <remote-alias>postalCode</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hotel_review2.csv_5C43ED44BFBF42438A4855342C05277A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>province</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[province]</local-name>
+            <parent-name>[hotel_review2.csv]</parent-name>
+            <remote-alias>province</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hotel_review2.csv_5C43ED44BFBF42438A4855342C05277A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>reviews.date</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[reviews.date]</local-name>
+            <parent-name>[hotel_review2.csv]</parent-name>
+            <remote-alias>reviews.date</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hotel_review2.csv_5C43ED44BFBF42438A4855342C05277A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>reviews.dateSeen</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[reviews.dateSeen]</local-name>
+            <parent-name>[hotel_review2.csv]</parent-name>
+            <remote-alias>reviews.dateSeen</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hotel_review2.csv_5C43ED44BFBF42438A4855342C05277A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>reviews.rating</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[reviews.rating]</local-name>
+            <parent-name>[hotel_review2.csv]</parent-name>
+            <remote-alias>reviews.rating</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hotel_review2.csv_5C43ED44BFBF42438A4855342C05277A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>reviews.sourceURLs</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[reviews.sourceURLs]</local-name>
+            <parent-name>[hotel_review2.csv]</parent-name>
+            <remote-alias>reviews.sourceURLs</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hotel_review2.csv_5C43ED44BFBF42438A4855342C05277A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>reviews.text</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[reviews.text]</local-name>
+            <parent-name>[hotel_review2.csv]</parent-name>
+            <remote-alias>reviews.text</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hotel_review2.csv_5C43ED44BFBF42438A4855342C05277A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>reviews.title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[reviews.title]</local-name>
+            <parent-name>[hotel_review2.csv]</parent-name>
+            <remote-alias>reviews.title</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hotel_review2.csv_5C43ED44BFBF42438A4855342C05277A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>reviews.userCity</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[reviews.userCity]</local-name>
+            <parent-name>[hotel_review2.csv]</parent-name>
+            <remote-alias>reviews.userCity</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hotel_review2.csv_5C43ED44BFBF42438A4855342C05277A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>reviews.userProvince</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[reviews.userProvince]</local-name>
+            <parent-name>[hotel_review2.csv]</parent-name>
+            <remote-alias>reviews.userProvince</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hotel_review2.csv_5C43ED44BFBF42438A4855342C05277A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>reviews.username</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[reviews.username]</local-name>
+            <parent-name>[hotel_review2.csv]</parent-name>
+            <remote-alias>reviews.username</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hotel_review2.csv_5C43ED44BFBF42438A4855342C05277A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sourceURLs</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[sourceURLs]</local-name>
+            <parent-name>[hotel_review2.csv]</parent-name>
+            <remote-alias>sourceURLs</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hotel_review2.csv_5C43ED44BFBF42438A4855342C05277A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>websites</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[websites]</local-name>
+            <parent-name>[hotel_review2.csv]</parent-name>
+            <remote-alias>websites</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[hotel_review2.csv_5C43ED44BFBF42438A4855342C05277A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='hotel_review2.csv' datatype='table' name='[__tableau_internal_object_id__].[hotel_review2.csv_5C43ED44BFBF42438A4855342C05277A]' role='measure' type='quantitative' />
+      <column caption='Address' datatype='string' name='[address]' role='dimension' type='nominal' />
+      <column caption='Categories' datatype='string' name='[categories]' role='dimension' type='nominal' />
+      <column caption='City' datatype='string' name='[city]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Date Added' datatype='datetime' name='[dateAdded]' role='dimension' type='ordinal' />
+      <column caption='Date Updated' datatype='datetime' name='[dateUpdated]' role='dimension' type='ordinal' />
+      <column caption='Id' datatype='string' name='[id]' role='dimension' type='nominal' />
+      <column caption='Keys' datatype='string' name='[keys]' role='dimension' type='nominal' />
+      <column aggregation='Avg' caption='Latitude' datatype='real' name='[latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' caption='Longitude' datatype='real' name='[longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+      <column caption='Postal Code' datatype='string' name='[postalCode]' role='dimension' semantic-role='[ZipCode].[Name]' type='nominal' />
+      <column caption='Primary Categories' datatype='string' name='[primaryCategories]' role='dimension' type='nominal' />
+      <column caption='Province' datatype='string' name='[province]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Reviews.Date' datatype='datetime' name='[reviews.date]' role='dimension' type='ordinal' />
+      <column caption='Reviews.Rating' datatype='real' name='[reviews.rating]' role='measure' type='quantitative' />
+      <column caption='Reviews.Text' datatype='string' name='[reviews.text]' role='dimension' type='nominal' />
+      <column caption='Reviews.Title' datatype='string' name='[reviews.title]' role='dimension' type='nominal' />
+      <column datatype='string' name='[reviews.userProvince]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Reviews.Username' datatype='string' name='[reviews.username]' role='dimension' type='nominal' />
+      <column caption='Source UR Ls' datatype='string' name='[sourceURLs]' role='dimension' type='nominal' />
+      <column caption='Websites' datatype='string' name='[websites]' role='dimension' type='nominal' />
+      <drill-paths>
+        <drill-path name='Province, City'>
+          <field>[province]</field>
+          <field>[city]</field>
+        </drill-path>
+      </drill-paths>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' _.fcp.SchemaViewerObjectModel.true...common-percentage='1' _.fcp.SchemaViewerObjectModel.true...user-set-layout-v2='true' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Kenya&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='hotel_review2.csv' id='hotel_review2.csv_5C43ED44BFBF42438A4855342C05277A'>
+            <properties context=''>
+              <relation connection='textscan.0o91zqd0cv05h71e0821601aod6k' name='hotel_review2.csv' table='[hotel_review2#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_KE' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='string' name='id' ordinal='1' />
+                  <column datatype='datetime' name='dateAdded' ordinal='2' />
+                  <column datatype='datetime' name='dateUpdated' ordinal='3' />
+                  <column datatype='string' name='address' ordinal='4' />
+                  <column datatype='string' name='categories' ordinal='5' />
+                  <column datatype='string' name='primaryCategories' ordinal='6' />
+                  <column datatype='string' name='city' ordinal='7' />
+                  <column datatype='string' name='country' ordinal='8' />
+                  <column datatype='string' name='keys' ordinal='9' />
+                  <column datatype='real' name='latitude' ordinal='10' />
+                  <column datatype='real' name='longitude' ordinal='11' />
+                  <column datatype='string' name='name' ordinal='12' />
+                  <column datatype='string' name='postalCode' ordinal='13' />
+                  <column datatype='string' name='province' ordinal='14' />
+                  <column datatype='datetime' name='reviews.date' ordinal='15' />
+                  <column datatype='string' name='reviews.dateSeen' ordinal='16' />
+                  <column datatype='real' name='reviews.rating' ordinal='17' />
+                  <column datatype='string' name='reviews.sourceURLs' ordinal='18' />
+                  <column datatype='string' name='reviews.text' ordinal='19' />
+                  <column datatype='string' name='reviews.title' ordinal='20' />
+                  <column datatype='string' name='reviews.userCity' ordinal='21' />
+                  <column datatype='string' name='reviews.userProvince' ordinal='22' />
+                  <column datatype='string' name='reviews.username' ordinal='23' />
+                  <column datatype='string' name='sourceURLs' ordinal='24' />
+                  <column datatype='string' name='websites' ordinal='25' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='hotel_reviews2' name='federated.0izgjn2105tlvd144huea1wvw8aq' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0izgjn2105tlvd144huea1wvw8aq'>
+            <column caption='Address' datatype='string' name='[address]' role='dimension' type='nominal' />
+            <column-instance column='[latitude]' derivation='Avg' name='[avg:latitude:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[longitude]' derivation='Avg' name='[avg:longitude:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[name]' derivation='Count' name='[cnt:name:qk]' pivot='key' type='quantitative' />
+            <column caption='Id' datatype='string' name='[id]' role='dimension' type='nominal' />
+            <column aggregation='Avg' caption='Latitude' datatype='real' name='[latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+            <column aggregation='Avg' caption='Longitude' datatype='real' name='[longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+            <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+            <column-instance column='[id]' derivation='None' name='[none:id:nk]' pivot='key' type='nominal' />
+            <column-instance column='[province]' derivation='None' name='[none:province:nk]' pivot='key' type='nominal' />
+            <column caption='Province' datatype='string' name='[province]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0izgjn2105tlvd144huea1wvw8aq].[none:id:nk]'>
+            <groupfilter count='20' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='COUNT([address])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:id:nk]' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-manual-selection-is-empty='true' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0izgjn2105tlvd144huea1wvw8aq].[none:id:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.0izgjn2105tlvd144huea1wvw8aq].[avg:latitude:qk]' />
+              <lod column='[federated.0izgjn2105tlvd144huea1wvw8aq].[avg:longitude:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0izgjn2105tlvd144huea1wvw8aq].[none:province:nk]</rows>
+        <cols>[federated.0izgjn2105tlvd144huea1wvw8aq].[cnt:name:qk]</cols>
+      </table>
+      <simple-id uuid='{23A1DBDF-995D-49DF-8C20-44C20AC8B955}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='hotel_reviews2' name='federated.0izgjn2105tlvd144huea1wvw8aq' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0izgjn2105tlvd144huea1wvw8aq'>
+            <column caption='City' datatype='string' name='[city]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column-instance column='[reviews.userCity]' derivation='CountD' name='[ctd:reviews.userCity:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[city]' derivation='None' name='[none:city:nk]' pivot='key' type='nominal' />
+            <column datatype='string' name='[reviews.userCity]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0izgjn2105tlvd144huea1wvw8aq].[none:city:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='COUNTD([reviews.userCity])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:city:nk]' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-manual-selection-is-empty='true' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0izgjn2105tlvd144huea1wvw8aq].[none:city:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0izgjn2105tlvd144huea1wvw8aq].[ctd:reviews.userCity:qk]</rows>
+        <cols>[federated.0izgjn2105tlvd144huea1wvw8aq].[none:city:nk]</cols>
+      </table>
+      <simple-id uuid='{336BB3AB-B0A2-42D4-81C7-3F04FF39993F}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0izgjn2105tlvd144huea1wvw8aq].[none:categories:nk]</field>
+            <field>[federated.0izgjn2105tlvd144huea1wvw8aq].[none:id:nk]</field>
+            <field>[federated.0izgjn2105tlvd144huea1wvw8aq].[none:name:nk]</field>
+            <field>[federated.0izgjn2105tlvd144huea1wvw8aq].[none:province:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{F1F324F9-F31B-410F-B081-4CAE6CAC9E4D}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0izgjn2105tlvd144huea1wvw8aq].[none:city:nk]</field>
+            <field>[federated.0izgjn2105tlvd144huea1wvw8aq].[none:reviews.dateSeen:nk]</field>
+            <field>[federated.0izgjn2105tlvd144huea1wvw8aq].[none:reviews.text:nk]</field>
+            <field>[federated.0izgjn2105tlvd144huea1wvw8aq].[none:reviews.userCity:nk]</field>
+            <field>[federated.0izgjn2105tlvd144huea1wvw8aq].[yr:dateAdded:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{9C354EFE-0025-4A5E-BED5-4BDF663C6AD9}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      /T9YrEb9cPO36wAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 2' width='192'>
+      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
+      tmNu1uuqqtac3/1/n3R5e441dbP99Cz1BFu7DZZtuWnoLCzOkZkPEz18nEZHktv3I/SePYfy
+      xEWAoihYeVmgPB6znBSlEnOU/2Kp2BxWz7oT++lpZ7QsAIrm5OJrn75TfDPFl9ASYveQLgxh
+      axIAYWsSAGFrEgBhaxIAYWsSAGFrEgBhaxIAYWsSAGFrEgBhaxIAYWsSAGFrEgBhaxIAYWsS
+      AGFrEgBha9YFwDSYGh3i8o27mGaeezcu8/777zMTkbWExO5laVP84WPdZEdGIJNAbezgjZ4q
+      Hs4vYzT4ynqjbP1TzfZP/twqhUKh6ByGRXcNMU2z6PhWMjbZTwULFw8o6MX3k1U224Yy3Sj7
+      KakqhXweXS+gqNpnmuI/blS3smFdVdWi46mqdQc4TdOKzmFZ/+vjfVROilp8Ds3K/aQW309W
+      2Wwb1Ke8xZR1ATB0RgZv82g2gu6qotZc58a9BXrOXvjMi0RRlE/+WUWh+Ivd0sZ7RSnrHJtt
+      g5UUNtkGK38Xm+wny8bfbBue8jdhXQBUjeOnL3L89Mc/2E+HZYMLUR7yLpCwNQmAsDUJgLA1
+      CYCwNQmAsDUJgLA1CYCwNQmAsDUJgLA1CYCwNQmAsDUJgLC1MgXAZPbhIJev3CCatu57/0JY
+      rTwByCVYzno5d6qDhYXFskwhhBXKEgBTL+D0enG7PRh6ebuchPhNlCUAijtAITLNjb57+Ksb
+      yjGFEJYoU0uki97zF8jmDbweT1mmEMIK5QkAoDlc+B6PbhgGpmlimibG40Z1TYGejqAlc9VV
+      eYo2RddVeSybQ1OKN14fbK4hZ8Fd75vq/Js2dlu1Dc11vqJz+D0Oy+bwurSic+zWbVBM06Jl
+      Dbbw8Ytf1/WyN37vhTkMw7C8b/pJe2E/WTF+2Y4An/bxL7MSv1jDMMreXF7uOUzTRFVV2U8V
+      GL8iRwAhdqsd/iTYpP/aTxkLxYAc4fA6kOZu3/CmzwiHw19geJ3bH33ApcuXCC0uMzMbASCf
+      ihGJ/iYr1pnMjw/y4S8vMTQx95n/03e3f+unrk8yGs6VNEt4/hFrsRR37/SR1Yv/ncpvrHB/
+      Ypb4/BDvXx8jG5/l4Uys+HhP7Lv1yUnCua1qMRgbGiRdMJmdeMBKwpq3tIevv0//VITw7ATz
+      ywlLxnxSPrHKj/7756QLWQb67rPZslnau++++25ZKiiBmV1jecOHno2iZiJcutJPoDFIOp7C
+      UYhy594wqq+W2ZE7DI8+IpPPc/vmDfJqgHxslruD43jrGgl4nMUnSM4SNg/x4vPHcZFk4E4/
+      U7MRgo3VJAsQnhjg/mQYn5blTv8AeS1AJjJJ/+ADYlmNVPgRA8PjqP5aavyffjerwHRojfMX
+      z9PSUM340G2GRh7hrG4gEV0hm0njD/iZmphlbXmG4QfDTM0vMjM9S2O9nztDYyyFI1QRJ6o2
+      shB6iCMf48btQRxVjdT4XADEV+a4N/CQrtPnUJNL3OkbIGU6WF9ZpdplMh/NUl/jZ2luiVzO
+      xOWCQjKNv7me8YE7zIbjqIU4/fcegKpw68YVUoaXlqZ6FCCztoZeU0NAg5G7txieWiBY4+ba
+      1VukTCfB+hr0VJSU4mJ9JUpzrZPbd/pYS5k40hFu3R1kOV5A2Vii//4DXP4GxgfvMLOcpLU1
+      uOlf12Q6TWxlFW/AjeLwMDl0m7GFdRpq4NZHt5laWKOxwUPfzVssbxi0NdV94deWkcug6xlW
+      0yZmOotby3L37gBZ1U9sdYlsNMRS0rOzR4Dw9DTToQkejU/ibeugu/sMB5trAJPoepRCLs3k
+      9Cyqp5aXzvWg+ao52d1N77GDRNfWKGyEmV4q/tcOAKcbM5vGNHUMU+XQ8V5ONtcQz2VIZTdI
+      5Hy8evEM6VgUw8gxMT7Jekbl1VfPk19fZjXj4ZULPSwvLT0xsIpCAd0w0fUE0VSAV84fY3Fh
+      FYCNRAJd14nFEmRMFy9e7KUheIhTh2rZyELnyXMcavASXV8hlTeIRmNoDgeqYpLcSP16Fqeb
+      fU01rMeSjI8MkczlicdSuAtxhmeW8Pv8oLpwOvLEClDn0wjFcmjrIUKLUVIbUXQcYOrkVR/H
+      TnZz9mTH55eQKmRYj2dYDy8Q2cjhUE1SG0lME5paG5mbmkLzVLMw9oD1TIFYLMrCeoaXX72I
+      mkmxHo1hFBI8morg0FTyqQ1yW65KqfFcVwtj4/NQ2GA9kWNpaopoNkv70TMcqYe51RjZvM70
+      +ASlHS8/z9vQjhabZyNvMnJ/kExBJxaLU0jGiGTcbIQndjIAJjlHFV/5ym/z+os9pFMG8eUx
+      QssbVFX5cTgdOH3VNNT6CFRVoTpc+Nwu1GycwbEQDqcLb3U9NX735lO4W/DrIT66co1YVsXv
+      8+IO+PG4PPjcAarcaa7cuIuuaTjcfoINtXjNJFeu3SSt+GnwpLl6a4Cm5pYnBtZob6nhxtUr
+      jM4kqPVucPXWKK2tDVRVVdFc6+XWzdukUfEHAmiai6qAF5fXj8sTYHHsJrOxPE37DjB99yrR
+      lIFpKo+XkPz1y9PlCdB+rBd3apGmfR04VBWf30vLwf2sRBLUBZyAQlO1G4evkWBtFU5/gNrG
+      NhpqPLh9fhzqx6u1KbgKSfqHJ/n4ZMrhVRi8fpWhyUWcDpXahiBeTUV9/A9A8TTgy69Rv28/
+      +7s6cZvg8/up8xhcuXqDaMbA4XTg9tdR53ehqAqKpsIWV5Yenw9fXRuNPgXN5cbh0Ag2N+FA
+      Z+TuTaaSLpr9DlTVQXNL8KnWfFM0J163i86uDvL5PEc6OwANn99LU4MX01lPwCsXwU8wmRt/
+      wKOlGCd6zxGs3iJcO2hy9B6B1mM01ezch4yR2YcMT4XpON5Le7DakjGz2RiplIu6Oq8l45VC
+      AiBsTfoBhK1V5IMwIcrPZKT/OkvRLM7aVl4+cwxFUUjHIsxEshzr2l/0WXIKJPaGQpT+B2uc
+      7e1gqK+ftsNBJkbnCe5rI5OFAFFmwklOnOlhdqiPuFbD2eMtcgok9ghVw9TzGKZBwTQpZFI0
+      HjhOa60HSDE4ME4+lyQWXWN9I//4bdeMBEDsEWoVQX+ajy5dRqkK4vUEqKv2oWpOfN5aDh9u
+      RnO68bhcaJpKQ2MjLqdHToGEvf0f5mI4ZiPXDN4AAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
